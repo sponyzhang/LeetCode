@@ -7,9 +7,9 @@ class Solution {
                 case '(':
                 case '{':
                 case '[': stack.push(c); break;
-                case ')': if (stack.empty() || (char) stack.pop() != '(') return false; break;
-                case '}': if (stack.empty() || (char) stack.pop() != '{') return false; break;
-                case ']': if (stack.empty() || (char) stack.pop() != '[') return false; break;
+                case ')': if (stack.empty() || (char) stack.pop() != '(') return false; else break;
+                case '}': if (stack.empty() || (char) stack.pop() != '{') return false; else break;
+                case ']': if (stack.empty() || (char) stack.pop() != '[') return false; else break;
                 default: System.out.println("error");
             }
         }
